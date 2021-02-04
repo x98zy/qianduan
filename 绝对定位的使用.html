@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .carousel {
+            width: 650px;
+            height: 405px;
+            margin: 40px auto;
+            border: 1px solid #333333;
+            position: relative;
+        }
+        .carousel .btn {
+            /*绝对定位的行内元素可以设置高度和宽度*/
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            /*设置圆形*/
+            border-radius: 50%;
+            /*文字居中*/
+            text-align: center;
+            /*行高等于盒子高表示垂直居中*/
+            line-height: 40px;
+            /*.5表示半透明度*/
+            background-color: rgba(255,255,255,.5);
+            /*鼠标为小手形*/
+            cursor: pointer;
+            font-family: "Times New Roman";
+            font-size: 26px;
+        }
+        .carousel .btn:hover {
+            background-color: orange;
+            color: white;
+        }
+        .carousel .leftbtn {
+            /*绝对定位的元素实现垂直居中要top值设置成50%
+            ，margin-top设置成负的高度一般*/
+            left: 10px;
+            top: 50%;
+            margin-top:-20px;
+        }
+        .carousel .rightbtn {
+            right: 10px;
+            top: 50%;
+            margin-top: -20px;
+        }
+        .carousel ol {
+            position: absolute;
+            width: 130px;
+            height: 20px;
+            right: 20px;
+            bottom: 20px;
+            list-style: none;
+        }
+        .carousel ol li {
+            float: left;
+            margin-right: 10px;
+            width: 20px;
+            height: 20px;
+            background-color: rgba(255,255,255,0.5);
+            border-radius: 50%;
+        }
+        .carousel ol .current {
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="carousel">
+        <img src="images/1_gaitubao_650x405.jpg">
+        <a class="leftbtn btn">&lt;</a>
+        <a class="rightbtn btn">&gt;</a>
+        <ol>
+            <li></li>
+            <li></li>
+            <li class="current"></li>
+            <li></li>
+        </ol>
+    </div>
+</body>
+</html>

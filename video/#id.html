@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box p:first-child {
+            color: red;
+        }
+        .box p:last-child {
+            color: blue;
+        }
+        .box p:nth-child(2n+1) {
+            background: aqua;
+        }
+        .box p:nth-of-type(3) {
+            color: revert;
+        }
+    </style>
+</head>
+<body>
+    <p>我也是段落一</p>
+    <h3>我是三级标题</h3>
+    <div class="box">
+        <p>1</p>
+        <p>2</p>
+        <h5>五级标题</h5>
+        <h5>五级标题</h5>
+        <h5>五级标题</h5>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
+    </div>
+</body>
+</html>

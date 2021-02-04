@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+   <form action="" method="post">
+       <p>
+           请输入姓名<input type="text" value="xu" placeholder="请输入姓名">
+       </p>
+       <p>
+           出生年月<input type="text" value="1992.11.12" disabled>
+       </p>
+       <label>
+           <input type="radio" name="sex" value="nan">男
+       </label>
+       <label>
+           <input type="radio" name="sex" value="nv">女
+       </label>
+       <label>
+           <input type="checkbox" name="bloodtype" value="A">A
+       </label>
+       <label>
+           <input type="checkbox" name="bloodtype" value="B">B
+       </label>
+       <label>
+           <input type="checkbox" name="bloodtype" value="C">C
+       </label>
+       <label>
+           <input type="checkbox" name="bloodtype" value="AB">AB
+       </label>
+       <p>
+           请输入密码：<input type="password" placeholder="请输入密码">
+       </p>
+       <p>
+           支付方式 <select>
+           <option value="alipay">支付宝</option>
+           <option value="wechat">微信</option>
+           <option value="bank">网银</option>
+       </select>
+       </p>
+       <p>
+           留言
+           <textarea cols="60" rows="10"></textarea>
+       </p>
+       <p>
+           <input type="button" value="我是一个普通按钮">
+       </p>
+       <p>
+           <button >我是一个普通按钮</button>
+       </p>
+       <p>
+           <input type="submit" value="提交按钮">
+       </p>
+       <p>
+           <input type="reset" value="我是重置按钮">
+       </p>
+       <p>
+           日期输入控件
+           <input type="date">
+       </p>
+       <p>
+           文件输入控件
+           <input type="file">
+       </p>
+       <p>
+           电子邮件输入控件
+           <input type="email">
+       </p>
+       <p>
+           <!--datalist控件-->
+           <input type="text" list="provide-list">
+           <datalist id="provide-list">
+               <option value="山东">山东
+               <option value="江西">江西
+               <option value="浙江">浙江
+           </datalist>
+       </p>
+   </form>
+</body>
+</html>
